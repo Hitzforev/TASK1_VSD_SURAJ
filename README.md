@@ -1,4 +1,4 @@
-# TASK1_VSD_SURAJ
+![image](https://github.com/user-attachments/assets/41504afa-0876-4040-bc03-b3aa2aafb577)# TASK1_VSD_SURAJ
 
 Instructor : Kunal Ghosh 
 
@@ -38,12 +38,12 @@ Instructor : Kunal Ghosh
 
 
 #There are 6 types of instruction for Immediate encoding variables <br/>
-- R-Type Instruction -Register
-- I-Type Instruction- Immediate
-- S-Type Instruction-Store
-- B-Type Instruction-Branch 
-- u-Type Instruction-Upper Immediate
-- J-Type Instruction-Jump
+- R-Type Instruction -Register<br/>
+- I-Type Instruction- Immediate<br/>
+- S-Type Instruction-Store<br/>
+- B-Type Instruction-Branch <br/>
+- U-Type Instruction-Upper Immediate<br/>
+- J-Type Instruction-Jump<br/>
  ![pic5](https://github.com/user-attachments/assets/800c9eb6-191c-4d85-a91b-678e304720b9)
 
 
