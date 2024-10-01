@@ -33,5 +33,9 @@ Instructor : Kunal Ghosh
 *Refer to the RISC-V software documentation and list various RISC-V Instruction code<br/>
 *32 bit instruction format for 15 unique instruction codes from objdump file<br/>
 
+#Instruction format for 32-bit RISC-V unique instruction code:<br/>
+1)
+
+
 
 
