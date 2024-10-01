@@ -28,3 +28,10 @@ Instructor : Kunal Ghosh
 ![pic4](https://github.com/user-attachments/assets/be684de7-ebe4-43ea-a91f-eb1e1a466327)
 
 ->Finally we can use the same debugger to check all other locations 
+
+# TASK-3:
+*Refer to the RISC-V software documentation and list various RISC-V Instruction code<br/>
+*32 bit instruction format for 15 unique instruction codes from objdump file<br/>
+
+
+
