@@ -30,8 +30,13 @@ Instructor : Kunal Ghosh
 ->Finally we can use the same debugger to check all other locations 
 
 # TASK-3:
-*Refer to the RISC-V software documentation and list various RISC-V Instruction code<br/>
-*32 bit instruction format for 15 unique instruction codes from objdump file<br/>
+* Refer to the RISC-V software documentation and list various RISC-V Instruction code<br/>
+- 32 bit instruction format for 15 unique instruction codes from objdump file<br/>
+
+#Instruction Format for RISC-V 32-BIT Instruction code:<br/>
+-
+
+
 
 
 
