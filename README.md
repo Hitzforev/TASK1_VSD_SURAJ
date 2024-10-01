@@ -34,14 +34,18 @@ Instructor : Kunal Ghosh
 * 32 bit instruction format for 15 unique instruction codes from objdump file<br/>
 
 #Instruction Format for RISC-V 32-BIT Instruction code:<br/>
-*There are 6 types of instruction 
-- R-Type Instruction
-- I-Type Instruction
-- S-Type Instruction
-- B-Type Instruction
-- u-Type Instruction
-- J-Type Instruction
-  ![pic5](https://github.com/user-attachments/assets/800c9eb6-191c-4d85-a91b-678e304720b9)
+ ![pic6](https://github.com/user-attachments/assets/9fabe390-6600-44b0-af64-a5ee30a94b53)
+
+
+#There are 6 types of instruction for Immediate encoding variables <br/>
+- R-Type Instruction -Register
+- I-Type Instruction- Immediate
+- S-Type Instruction-Store
+- B-Type Instruction-Branch 
+- u-Type Instruction-Upper Immediate
+- J-Type Instruction-Jump
+ ![pic5](https://github.com/user-attachments/assets/800c9eb6-191c-4d85-a91b-678e304720b9)
+
 
 
 
