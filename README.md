@@ -30,21 +30,27 @@ Instructor : Kunal Ghosh
 ->Finally we can use the same debugger to check all other locations 
 
 # TASK-3:
+
 * Refer to the RISC-V software documentation and list various RISC-V Instruction code<br/>
 * 32 bit instruction format for 15 unique instruction codes from objdump file<br/>
 
 #Instruction Format for RISC-V 32-BIT Instruction code:<br/>
+
+ -Structural Diagram shows the bitwise allocation to for each general instruction<br/>
+ 
  ![pic6](https://github.com/user-attachments/assets/9fabe390-6600-44b0-af64-a5ee30a94b53)
 
 
 #There are 6 types of instruction for Immediate encoding variables <br/>
+
 - R-Type Instruction -Register<br/>
 - I-Type Instruction- Immediate<br/>
 - S-Type Instruction-Store<br/>
 - B-Type Instruction-Branch <br/>
 - U-Type Instruction-Upper Immediate<br/>
 - J-Type Instruction-Jump<br/>
- ![pic5](https://github.com/user-attachments/assets/800c9eb6-191c-4d85-a91b-678e304720b9)
+
+![pic5](https://github.com/user-attachments/assets/800c9eb6-191c-4d85-a91b-678e304720b9)
 
 
 
