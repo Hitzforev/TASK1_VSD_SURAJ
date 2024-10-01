@@ -36,9 +36,9 @@ Instructor : Kunal Ghosh
 
 #Instruction Format for RISC-V 32-BIT Instruction code:<br/>
 
- -Structural Diagram shows the bitwise allocation to for each general instruction<br/>
+* Structural Diagram shows the bitwise allocation to for each general instruction<br/>
  
- ![pic6](https://github.com/user-attachments/assets/9fabe390-6600-44b0-af64-a5ee30a94b53)
+![pic6](https://github.com/user-attachments/assets/9fabe390-6600-44b0-af64-a5ee30a94b53)
 
 
 #There are 6 types of instruction for Immediate encoding variables <br/>
