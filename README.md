@@ -109,7 +109,7 @@ Machine code for  mv a1,a5 <br/>
 - Destination Register(rd):a1(x11,5bits)<br/>
 - Function (funct3):000(3bits)<br/>
   #  Breakdown
-- Immediate(16):000000000000<br/>
+- Immediate(0):000000000000<br/>
 - rs1(sp=x15):01111<br/>
 - funct3: 000<br/>
 - rd(sp=x11): 01011<br/>
@@ -141,7 +141,7 @@ Machine code for  lui  a6,oxffff8 <br/>
 - Immediate : 0xffff8(total 20 bits)<br/>
 - Destination register(rd):a6 (x16, 5bits)<br/>
   #  Breakdown
-- Immediate(16):1111 1111 1111 1111 1000<br/>
+- Immediate(ffff8):1111 1111 1111 1111 1000<br/>
 - rd(a6=x16):10000<br/>
 - opcode:0110111<br/>
 32 bit encoding-11111111111111111000 10000 0110111<br/>
@@ -150,19 +150,153 @@ Machine code for  lui  a6,oxffff8 <br/>
 
 Machine code for  sw a5,16(s0) <br/>
 ![pic12](https://github.com/user-attachments/assets/1905d737-6df5-47ba-a308-2a4c1f26301f)
-# 6. Instruction: mv a1,a5
+# 6. Instruction: sw a5,16(s0)
+- Opcode: 0100011(7bits)<br/>
+- Immediate : 16 (split into 7 bits and 5bits)<br/>
+- Source register(rs1):s0 (x8, 5bits)<br/>
+- Source Register(rs2):a5(x15,5bits)<br/>
+- Function (funct3):010(3bits)<br/>
+  #  Breakdown
+- Immediate(16):000000010000<br/>
+- imm[11;5]:0000000
+- rs1(s0=x8):01000<br/>
+- rs2(a5=x15):01111<br/>
+- funct3: 010<br/>
+- imm[4;0]:10000
+- opcode:0100011<br/>
+32 bit encoding-0000000 01000 01111 010 10000 0100011<br/>
+
+
+Machine code for  ld a5,64(s0) <br/>
+![pic13](https://github.com/user-attachments/assets/8eea56fb-c11f-42d5-9610-28d7603c5470)
+# 7. Instruction: ld a5,64(s0)
+- Opcode: 00000011(7bits)<br/>
+- Immediate : 64(total 12 bits)<br/>
+- Source register(rs1):s0 (x8, 5bits)<br/>
+- Destination Register(rd):a5(x15,5bits)<br/>
+- Function (funct3):011(3bits)<br/>
+  #  Breakdown
+- Immediate(64):000001000000<br/>
+- rs1(s0=x8):01000<br/>
+- funct3: 011<br/>
+- rd(a5=x15): 01111<br/>
+- opcode:0000011<br/>
+32 bit encoding-000001000000 01000 011 01111 0000011<br/>
+
+
+Machine code for  jal ra,1fb34<__eqtf2> <br/>
+![pic14](https://github.com/user-attachments/assets/58602f0f-7a1d-4713-bd83-cd704c138623)
+# 8. Instruction:jal ra,1fb34<__eqtf2>
+- Opcode:1101111(7bits)<br/>
+- Immediate : 0x1fb34(total 20 bits)<br/>
+- Destination register(rd):ra (x1, 5bits)<br/>
+  #  Breakdown
+- Immediate(1fb34):0001 1111 1011 0011 0100<br/>
+- rd(ra=x1):00001<br/>
+- opcode:0110111<br/>
+32 bit encoding-01100110100011111100<br/>
+
+
+Machine code for sd s1,8(sp) <br/>
+![pic15](https://github.com/user-attachments/assets/1eb65baf-d267-43a0-99ec-d484b6567db3)
+# 9. Instruction: sd s1,8(sp)
+- Opcode:0100011(7bits)<br/>
+- Immediate : 00000000001000(total 12 bits)<br/>
+- Source register(rs1):sp (x2, 5bits)<br/>
+- Source register(rs2):s1 (x9, 5bits)<br/>
+  #  Breakdown
+- Immediate(8):000000001000<br/>
+- imm[11:5]:0000000<br/>
+- rs2:10000<br/>
+- rs1:00010<br/>
+- funct3: 011<br/>
+- imm[4:0]:01000<br/>
+- opcode:0100011<br/>
+32 bit encoding-0000000100000001001101000<br/>
+
+
+Machine code for li s4,9 <br/>
+![pic16](https://github.com/user-attachments/assets/a3d83f1c-e225-4701-a3c7-39f5dd3c02c8)
+# 10. Instruction: li s4,9
+- Opcode:0010011(7bits)<br/>
+- Immediate :9(total 12 bits)<br/>
+  #  Breakdown
+- Immediate(8):000000010000<br/>
+- rs1:00000<br/>
+- funct3: 000<br/>
+- rd:01100
+- opcode:0010011<br/>
+32 bit encoding-0000000100000000000001100010011<br/>
+
+Machine code for jal ra,18b44<strlen> <br/>
+![pic17](https://github.com/user-attachments/assets/f60bab56-d445-465f-83ea-754b37214aa5)
+# 11. Instruction:jal ra,18b44<strlen>
+#  Breakdown
+- Immediate(18b44):00011000101101000100<br/>
+- after jal operation -0011 0001 0110 1000 1000
+- rd(x1):00001
+- opcode:1101111<br/>
+32 bit encoding-01010001000101100010000011101111<br/>
+
+Machine code for jal ra,1680c<_localeconv_r> <br/>
+![pic12_](https://github.com/user-attachments/assets/1e939b04-efd2-4590-afb8-2dd74b34a427)
+# 12. Instruction:jal ra,1680c<_localeconv_r>
+#  Breakdown
+- Immediate(1680c):0001 0110 1000 0000 1100<br/>
+-After jal operation:0010 1101 0000 0001 1000
+- rd(x1):00001
+- opcode:1101111<br/>
+32 bit encoding-00000011000001011010<br/>
+
+Machine code for jal ra,1045c<_vfprintf_r> <br/>
+![pic19](https://github.com/user-attachments/assets/2d39da63-db7a-4e3c-8e46-062ce9fb01df)
+# 13. Instruction:jal ra,1045c<_vfprintf_r>
+#  Breakdown
+-Immediate(1045c):00010000010001011100<br/>
+-After jal operation:0010 0000 1000 1011 1000
+- rd(x1):00001
+- opcode:1101111<br/>
+32 bit encoding-00010111000001000001000011101111<br/>
+
+
+Machine code for  ld a5,0(s0) <br/>
+![pic22](https://github.com/user-attachments/assets/052fb9e3-9d52-44c2-9a33-66a22fb87e79)
+# 14. Instruction: ld a5,0(s0)
+- Opcode: 00000011(7bits)<br/>
+- Immediate : 0(total 12 bits)<br/>
+- Source register(rs1):s0 (x8, 5bits)<br/>
+- Destination Register(rd):a5(x15,5bits)<br/>
+- Function (funct3):011(3bits)<br/>
+  #  Breakdown
+- Immediate(0):000000000000<br/>
+- rd(a5=x15): 01111<br/>
+- funct3: 011<br/>
+- rs1(s0=x8):01000<br/>
+- opcode:0000011<br/>
+32 bit encoding-000000001111011010000000011 <br/>
+
+Machine code for  mv a2,a1 <br/>
+![pic23](https://github.com/user-attachments/assets/4f9c62f2-7c72-407f-a74e-7050f2e208ff)
+# 15. Instruction: mv a2,a1
 - Opcode: 0010011(7bits)<br/>
 - Immediate : 0 (total 12 bits)<br/>
-- Source register(rs1):a5 (x15, 5bits)<br/>
-- Destination Register(rd):a1(x11,5bits)<br/>
+- Source register(rs1):a1 (x11, 5bits)<br/>
+- Destination Register(rd):a2(x12,5bits)<br/>
 - Function (funct3):000(3bits)<br/>
   #  Breakdown
-- Immediate(16):000000000000<br/>
-- rs1(sp=x15):01111<br/>
+- Immediate(0):000000000000<br/>
+- rs1(a1=x11):01011<br/>
 - funct3: 000<br/>
-- rd(sp=x11): 01011<br/>
+- rd(s2=x12): 01100<br/>
 - opcode:0010011<br/>
-32 bit encoding-000000000000 01111 000 01011 0010011<br/>
+32 bit encoding-000000000000 01011 000 01100 0010011<br/>
+
+
+
+
+
+
+ 
 
 
 
