@@ -253,10 +253,14 @@ Machine code for jal ra,1045c<_vfprintf_r> <br/>
 # 13. Instruction:jal ra,1045c<_vfprintf_r>
 #  Breakdown
 -Immediate(1045c):00010000010001011100<br/>
--After jal operation:0010 0000 1000 1011 1000
+- Target address =1045c and current address=10000
+- offset=ox1045c-ox10000=1116(decimal)
+- Finally 1116 in binary (immediate)=0000 0000 0100 0101 1100
+- after jal operation =0000 0000 1000 1011 1000
+- imm[20],imm[10:1],imm[11],imm[19:12]
 - rd(x1):00001
 - opcode:1101111<br/>
-32 bit encoding-00010111000001000001000011101111<br/>
+32 bit encoding-0 0010111000 1 00000000 00001 1101111 <br/>
 
 
 Machine code for  ld a5,0(s0) <br/>
