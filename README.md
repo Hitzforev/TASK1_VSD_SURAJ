@@ -148,6 +148,30 @@ Machine code for  lui  a6,oxffff8 <br/>
 
 
 
+Machine code for  sw a5,16(s0) <br/>
+![pic12](https://github.com/user-attachments/assets/1905d737-6df5-47ba-a308-2a4c1f26301f)
+# 6. Instruction: mv a1,a5
+- Opcode: 0010011(7bits)<br/>
+- Immediate : 0 (total 12 bits)<br/>
+- Source register(rs1):a5 (x15, 5bits)<br/>
+- Destination Register(rd):a1(x11,5bits)<br/>
+- Function (funct3):000(3bits)<br/>
+  #  Breakdown
+- Immediate(16):000000000000<br/>
+- rs1(sp=x15):01111<br/>
+- funct3: 000<br/>
+- rd(sp=x11): 01011<br/>
+- opcode:0010011<br/>
+32 bit encoding-000000000000 01111 000 01011 0010011<br/>
+
+
+
+
+
+
+
+
+
 
 
 
