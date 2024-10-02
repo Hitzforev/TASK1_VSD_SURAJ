@@ -91,7 +91,7 @@ Machine code for sd s0,16(sp)<br/>
 - Function (funct3):011(3bits)<br/>
   #  Breakdown
 - Immediate(16):000000010000<br/>
-- imm[11:5](7bits):0000000<br/>
+- imm[11:5] (7bits):0000000<br/>
 - rs2(s0=x8):01000<br/>
 - rs1(ss=x2):00010<br/>
 - funct3: 011<br/>
@@ -126,12 +126,12 @@ Machine code for  ld a3,16(sp) <br/>
 - Destination Register(rd):a3(x13,5bits)<br/>
 - Function (funct3):011(3bits)<br/>
   #  Breakdown
-- Immediate(16):000000010000<br/>
+- Immediate(16):0000 0001 0000<br/>
 - rs1(sp=x2):00010<br/>
 - funct3: 011<br/>
 - rd(sp=x13): 01101<br/>
 - opcode:0000011<br/>
-32 bit encoding-000000010000 00010 011 01101 0000011<br/>
+32 bit encoding-000000 01101 00010 011 0000011<br/>
 
 
 Machine code for  lui  a6,oxffff8 <br/>
