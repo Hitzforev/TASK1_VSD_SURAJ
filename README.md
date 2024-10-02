@@ -233,21 +233,24 @@ Machine code for jal ra,18b44<strlen> <br/>
 # 11. Instruction:jal ra,18b44<strlen>
 #  Breakdown
 - Immediate(18b44):00011000101101000100<br/>
-- after jal operation -0011 0001 0110 1000 1000
+- Target address =18b44 and current address=10000<br/>
+- offset=ox18b44-ox10000=65,536(decimal)
+- Finally65,536 in binary (20bits format)=0001 0000 0000 0000 0000<br/>
+- after jal operation -0010 0000 0000 0000 0000<br/>
 - rd(x1):00001
 - opcode:1101111<br/>
-32 bit encoding-01010001000101100010000011101111<br/>
+32 bit encoding-0 0000000000 001000000 00001 1101111<br/>
 
 Machine code for jal ra,1680c<_localeconv_r> <br/>
 ![pic12_](https://github.com/user-attachments/assets/1e939b04-efd2-4590-afb8-2dd74b34a427)
 # 12. Instruction:jal ra,1680c<_localeconv_r>
 #  Breakdown
 - Immediate(1680c):0001 0110 1000 0000 1100<br/>
-- Target address =1680c and current address=10000
+- Target address =1680c and current address=10000<br/>
 - offset=ox1680c-ox10000=26,636(decimal)
-- Finally 26,636 in binary (20bits format)=0000 0110 1000 0000 1100
--After jal encoding operation:0000 1101 0000 0001 1000
-- rd(x1):00001
+- Finally 26,636 in binary (20bits format)=0000 0110 1000 0000 1100<br/>
+-After jal encoding operation:0000 1101 0000 0001 1000<br/>
+- rd(x1):00001<br/>
 - opcode:1101111<br/>
 32 bit encoding-0 0000001100 0 00011010 00001 1101111<br/>
 
@@ -256,12 +259,12 @@ Machine code for jal ra,1045c<_vfprintf_r> <br/>
 # 13. Instruction:jal ra,1045c<_vfprintf_r>
 #  Breakdown
 -Immediate(1045c):00010000010001011100<br/>
-- Target address =1045c and current address=10000
+- Target address =1045c and current address=10000<br/>
 - offset=ox1045c-ox10000=1116(decimal)
-- Finally 1116 in binary =0000 0000 0100 0101 1100
-- after jal operation =0000 0000 1000 1011 1000
-- imm[20],imm[10:1],imm[11],imm[19:12]
-- rd(x1):00001
+- Finally 1116 in binary =0000 0000 0100 0101 1100<br/>
+- after jal operation =0000 0000 1000 1011 1000<br/>
+- imm[20],imm[10:1],imm[11],imm[19:12]<br/>
+- rd(x1):00001<br/>
 - opcode:1101111<br/>
 32 bit encoding-0 0010111000 1 00000000 00001 1101111 <br/>
 
