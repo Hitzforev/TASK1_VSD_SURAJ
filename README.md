@@ -52,7 +52,18 @@ Instructor : Kunal Ghosh
 
 ![pic5](https://github.com/user-attachments/assets/800c9eb6-191c-4d85-a91b-678e304720b9)
 
+# Opcode and Function Fields
 
+- Opcode: Determines the type of Instruction to be followed in 32-bit Instruction format.<br/>
+- fun3 and fun7: It  specifies the type of operation need to be performed on instruction and it has different function values for each diffirent instruction<br/>
+
+#Immediate values and registers
+- Immediate value: Encoded in specific fields within the instruction<br/>
+- Registers: Specific fields such as rs1(source register),rs2(source register) and  and rd(destination register)<br/>
+
+
+
+  
 
 
 
