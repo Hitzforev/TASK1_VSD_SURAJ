@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/62c74bb4-47f2-4a9b-958e-fa6ca71a3a37)
+
 
 Instructor : Kunal Ghosh 
 
@@ -28,6 +28,8 @@ Instructor : Kunal Ghosh
 ![pic4](https://github.com/user-attachments/assets/be684de7-ebe4-43ea-a91f-eb1e1a466327)
 
 ->Finally we can use the same debugger to check all other locations 
+
+
 
 # TASK-3:
 
@@ -65,19 +67,88 @@ Instructor : Kunal Ghosh
 
 Machine code for  addi sp,sp,16<br/>
 ![pic7](https://github.com/user-attachments/assets/4827557c-4040-4064-8f41-69b11ea008a1)
-
 # 1. Instruction: addi sp,sp,16
 - Opcode: 0010011(7bits)<br/>
 - Immediate : 16 (total 12 bits)<br/>
 - Source register(rs1):sp (x2, 5bits)<br/>
 - Function (funct3):000(3bits)<br/>
-  # Breakdown
+  #  Breakdown
 - Immediate(16):000000010000<br/>
 - rs1(sp=x2):00010<br/>
 - funct3: 000<br/>
 - rd(sp=x2): 00010<br/>
 - opcode:0010011<br/>
-32 bit encoding-0000000100000001000000100010011
+32 bit encoding-000000010000 00010 000 00010 0010011<br/>
+
+
+Machine code for sd s0,16(sp)<br/>
+![pic8](https://github.com/user-attachments/assets/c3aa90a3-ff64-4978-b1ca-6e4ca6d86472)
+# 2. Instruction: sd  s0,16(sp)
+- Opcode: 0100011(7bits)<br/>
+- Immediate : 16 (total 12 bits ,split into two parts :imm[11:5] and imm[4:0])<br/>
+- Source register(rs2):s0 (x8, 5bits)<br/>
+- Base register(rs1):sp (x2, 5bits)<br/>
+- Function (funct3):011(3bits)<br/>
+  #  Breakdown
+- Immediate(16):000000010000<br/>
+- imm[11:5](7bits):0000000<br/>
+- rs2(s0=x8):01000<br/>
+- rs1(ss=x2):00010<br/>
+- funct3: 011<br/>
+- imm[4:0](5 bits):10000
+- opcode:0010011<br/>
+32 bit encoding-0000000 01000 00010 011 0010011 <br/>
+
+
+Machine code for  mv a1,a5 <br/>
+![pic9](https://github.com/user-attachments/assets/bf8cfc48-b1bc-4ecd-b98a-eb4c3edd9450)
+# 3. Instruction: mv a1,a5
+- Opcode: 0010011(7bits)<br/>
+- Immediate : 0 (total 12 bits)<br/>
+- Source register(rs1):a5 (x15, 5bits)<br/>
+- Destination Register(rd):a1(x11,5bits)<br/>
+- Function (funct3):000(3bits)<br/>
+  #  Breakdown
+- Immediate(16):000000000000<br/>
+- rs1(sp=x15):01111<br/>
+- funct3: 000<br/>
+- rd(sp=x11): 01011<br/>
+- opcode:0010011<br/>
+32 bit encoding-000000000000 01111 000 01011 0010011<br/>
+
+
+Machine code for  ld a3,16(sp) <br/>
+![pic10](https://github.com/user-attachments/assets/157c84dc-cfd0-49b2-9810-d48b0d87705a)
+# 4. Instruction: ld a3,a16(sp)
+- Opcode: 00000011(7bits)<br/>
+- Immediate : 16(total 12 bits)<br/>
+- Source register(rs1):sp (x2, 5bits)<br/>
+- Destination Register(rd):a3(x13,5bits)<br/>
+- Function (funct3):011(3bits)<br/>
+  #  Breakdown
+- Immediate(16):000000010000<br/>
+- rs1(sp=x2):00010<br/>
+- funct3: 011<br/>
+- rd(sp=x13): 01101<br/>
+- opcode:0000011<br/>
+32 bit encoding-000000010000 00010 011 01101 0000011<br/>
+
+
+Machine code for  lui  a6,oxffff8 <br/>
+![pic11](https://github.com/user-attachments/assets/6b9f3552-bea5-4b0c-a618-c6b68001413e)
+# 5. Instruction:lui  a6,oxffff8
+- Opcode:0110111(7bits)<br/>
+- Immediate : 0xffff8(total 20 bits)<br/>
+- Destination register(rd):a6 (x16, 5bits)<br/>
+  #  Breakdown
+- Immediate(16):1111 1111 1111 1111 1000<br/>
+- rd(a6=x16):10000<br/>
+- opcode:0110111<br/>
+32 bit encoding-11111111111111111000 10000 0110111<br/>
+
+
+
+
 
 
 
