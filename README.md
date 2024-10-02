@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/62c74bb4-47f2-4a9b-958e-fa6ca71a3a37)
 
 Instructor : Kunal Ghosh 
 
@@ -57,9 +57,34 @@ Instructor : Kunal Ghosh
 - Opcode: Determines the type of Instruction to be followed in 32-bit Instruction format.<br/>
 - fun3 and fun7: It  specifies the type of operation need to be performed on instruction and it has different function values for each diffirent instruction<br/>
 
-#Immediate values and registers
+# Immediate values and registers
 - Immediate value: Encoded in specific fields within the instruction<br/>
 - Registers: Specific fields such as rs1(source register),rs2(source register) and  and rd(destination register)<br/>
+
+# INSTRUCTIONS:
+
+Machine code for  addi sp,sp,16<br/>
+![pic7](https://github.com/user-attachments/assets/4827557c-4040-4064-8f41-69b11ea008a1)
+
+# 1. Instruction: addi sp,sp,16
+- Opcode: 0010011(7bits)<br/>
+- Immediate : 16 (total 12 bits)<br/>
+- Source register(rs1):sp (x2, 5bits)<br/>
+- Function (funct3):000(3bits)<br/>
+  # Breakdown
+- Immediate(16):000000010000<br/>
+- rs1(sp=x2):00010<br/>
+- funct3: 000<br/>
+- rd(sp=x2): 00010<br/>
+- opcode:0010011<br/>
+32 bit encoding-0000000100000001000000100010011
+
+
+
+
+
+
+
 
 
 
