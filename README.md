@@ -312,13 +312,42 @@ Machine code for  mv a2,a1 <br/>
      
  ![pic24](https://github.com/user-attachments/assets/0a6071ec-72c2-4380-9af5-1d4b76b820e1)
 
-2.Set Up simulation Tools (verilog and GTKWave)Install Icarus Verilog and GTKWave for Simulation and waveform.
+2.Set Up simulation Tools (verilog and GTKWave)Install Icarus Verilog and GTKWave for Simulation and waveform.<br/>
 
     $ sudo apt update
     $ sudo apt install iverilog gtkwave
     $ nano iiitb_rv32i_tb.v
 
-3.Edit the Testbench File:Open the testbench file in a text editor
+3.Edit the Testbench File:Open the testbench file in a text editor <br/>
+![pic25](https://github.com/user-attachments/assets/58340ebe-839f-4ca1-9070-d27614c61221)
+
+- Here the testbench should include the above code<br/>
+
+
+    $dumpfile("simulation.vcd"); // Name of the VCD file
+    $dumpvars(0, testbench); // Dump all signals of the testbench module
+
+4.Run the Functional Simulation Signals and Instantiation of the design<br/>
+Complie and Simulate:<br/>
+
+    $ iverilog -o rv32i_simulation iiitb_rv32i.v iiitb_rv32i_tb.v
+    
+    $ vvp rv32i_simulation
+
+![pic26](https://github.com/user-attachments/assets/5922efad-64c9-48c7-9bf5-24f2eab65dd5)
+
+View Waveform:<br/>
+
+    $ gtkwave simulation.vcd
+
+![pic27](https://github.com/user-attachments/assets/a28d2991-a043-483e-8b1d-76a0c2aead4a)
+
+
+
+
+
+
+
 
 
 -
