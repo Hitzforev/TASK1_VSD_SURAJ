@@ -301,8 +301,11 @@ Machine code for  mv a2,a1 <br/>
 - opcode:0010011<br/>
 32 bit encoding-000000000000 01011 000 01100 0010011<br/>
 
+
 # Task-4:
+
 # Use the Risc_V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your Github<br/>
+
 
 1.Clone the Reference Repository First,clone the repository that contains the Verilog netlist and testbench:<br/>
      
