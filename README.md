@@ -301,6 +301,27 @@ Machine code for  mv a2,a1 <br/>
 - opcode:0010011<br/>
 32 bit encoding-000000000000 01011 000 01100 0010011<br/>
 
+# Task-4:
+# Use the Risc_V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your Github<br/>
+
+1.Clone the Reference Repository First,clone the repository that contains the Verilog netlist and testbench:<br/>
+     
+      $ git clone https://github.com/vinayrayapati/rv32i.git my_riscv_project
+      
+      $ cd my_riscv_project
+     
+ ![pic24](https://github.com/user-attachments/assets/0a6071ec-72c2-4380-9af5-1d4b76b820e1)
+
+2.Set Up simulation Tools (verilog and GTKWave)Install Icarus Verilog and GTKWave for Simulation and waveform.
+
+    $ sudo apt update
+    $ sudo apt install iverilog gtkwave
+    $ nano iiitb_rv32i_tb.v
+
+3.Edit the Testbench File:Open the testbench file in a text editor
+
+
+-
 
 
 
