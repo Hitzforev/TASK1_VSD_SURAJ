@@ -340,7 +340,8 @@ View Waveform:<br/>
 
     $ gtkwave simulation.vcd
 
-![pic27](https://github.com/user-attachments/assets/a28d2991-a043-483e-8b1d-76a0c2aead4a)
+![pic27](https://github.com/user-attachments/assets/21f53af2-6b9c-4fc6-9a37-ca625d5adf5c)
+
 
 
 
