@@ -302,6 +302,8 @@ Machine code for  mv a2,a1 <br/>
 32 bit encoding-000000000000 01011 000 01100 0010011<br/>
 
 
+
+
 # Task-4:
 
 # Use the Risc_V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your Github<br/>
@@ -327,8 +329,8 @@ Machine code for  mv a2,a1 <br/>
 - Here the testbench should include the above code<br/>
 
 
-    $dumpfile("simulation.vcd"); // Name of the VCD file
-    $dumpvars(0, testbench); // Dump all signals of the testbench module
+  $ dumpfile("simulation.vcd"); // Name of the VCD file<br/>
+  $ dumpvars(0, testbench); // Dump all signals of the testbench module<br/>
 
 4.Run the Functional Simulation Signals and Instantiation of the design<br/>
 Complie and Simulate:<br/>
@@ -343,7 +345,50 @@ View Waveform:<br/>
 
     $ gtkwave simulation.vcd
 
+
 ![pic27](https://github.com/user-attachments/assets/21f53af2-6b9c-4fc6-9a37-ca625d5adf5c)
+
+# ADD R6,R1,R2
+![pic29](https://github.com/user-attachments/assets/858ebc79-995c-4f5a-a6d3-bacec664ee69)
+->EX_MEM_IR[31:0]=32'h02208300<br/>
+->Operation - 1+2=3<br/>
+
+# SUB R7,R1,R2
+![pic30](https://github.com/user-attachments/assets/07164448-2f51-4092-b388-ef3459cba9c4)
+->EX_MEM_IR[31:0]=32'h02209380<br/>
+->Operation - 1-2=-1(In signed decimal form)<br/>
+-> In hexadecimal format it is 'FFFFFFFFF'(2's Compliment)<br/>
+
+# AND R8,R1,R3
+![pic31](https://github.com/user-attachments/assets/bf29833f-90a7-4414-8913-d3efc73fc86e)
+->EX_MEM_IR[31:0]=32'h0230A400<br/>
+->Operation - 1 & 3 =1(bitwise AND operation) -> 001 & 011=001<br/>
+
+# OR R9,R2,R5 
+![pic32](https://github.com/user-attachments/assets/11d295eb-9195-42dd-b3aa-5d51a2a469d9)
+->EX_MEM_IR[31:0]=32'h02513480<br/>
+-> Operation - 010 | 101=111 (bitwise or)<br/>
+
+#XOR R10,R1,R4
+![pic33](https://github.com/user-attachments/assets/8e00f6a5-cb2a-4716-8a50-e72593551117)
+->EX_MEM_IR[31:0]=32'h0240C500<br/>
+-> Operation - 001 ^ 100=101 (bitwise xor)<br/>
+
+# SLT R1,R2,R4
+![pic34](https://github.com/user-attachments/assets/2a83175b-9de7-4577-b44d-45171ed13b23)
+->EX_MEM_IR[31:0]=32'h02415580<br/>
+-> If rs1<rs2 Output =1 or else 0<br/>
+-> Operation - 2<4 =1;<br/>
+
+# ADDI R12,R4,4
+![pic35](https://github.com/user-attachments/assets/67b3feda-f674-400b-92b8-aa1451419622)
+->EX_MEM_IR[31:0]=32'h00520600<br/>
+-> ADDI means 'Add Immediate'<br/>
+-> Operation 4+5=9<br/>
+
+
+
+
 
 
 
