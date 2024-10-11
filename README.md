@@ -486,11 +486,10 @@ The objectives of this project are:<br/>
 ![10](https://github.com/user-attachments/assets/7fa0dfc2-acda-48e8-b84c-bbdbc222ad3b)
 ![11](https://github.com/user-attachments/assets/b0d3391c-dd10-4d9f-894f-46e1540d2443)
 
-
-
-![8](https://github.com/user-attachments/assets/241a2cc0-78df-400a-b10d-5c3dcdb8f113)
-
 # Application Video :
+
+
+
  
 # Acknowledgement:.<br/>
 
