@@ -1,5 +1,7 @@
-# VSD_SQUADRON_MINI _RISCV_RESEARCH_INTERNSHIP<br/>
+VSD_SQUADRON_MINI _RISCV_RESEARCH_INTERNSHIP<br/>
 ![1](https://github.com/user-attachments/assets/91fd5849-7bf7-4cdd-b69f-6771d83e0d71)
+Instructor : Kunal Ghosh <br/>
+
 # TASK 1: Installing the required programmmes dor the Internship such as Ubuntu on VBBOX,Visualc++ andwriting an example of C code along with evaluating RISC assembly code for the sample C code <br/>
 
 # Step 1: Setting up Ubuntu within VMBox<br/>
@@ -8,13 +10,52 @@
 - Launch Ubuntu,s terminal<br/>
 
 # Step 2: Install Leafpad<br/>
-$ sudo apt install leafpad
-Navigate to home directory:
-$ cd
-$ leafpad filename.c
 
 
-Instructor : Kunal Ghosh 
+ $ sudo apt install leafpad <br/>
+
+
+Navigate to home directory:<br/>
+
+ $ cd <br/>
+
+
+ $ leafpad filename.c <br/>
+
+![Pic1](https://github.com/user-attachments/assets/e657f68b-0338-4749-b669-703b952e6719)
+
+# Step 3: Compile and Run the C Code<br/>
+
+$ gcc filename .c
+
+Run the Compiled Program :
+
+$./a.out
+
+![pic4](https://github.com/user-attachments/assets/778e8b9e-687b-4f7a-b463-73a134f8421d)
+
+# Step 4: Compile C Code with RISC-V Compiler<br/>
+Compile the C code using the RISC-V compiler:
+
+$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o filename.o filename.c<br/>
+
+$ ls -ltr filename.o<br/>
+
+$ riscv64-unknown-elf-objdump -d filename.o | less <br/>
+
+![3](https://github.com/user-attachments/assets/a593e42f-53ea-42d3-8eb6-f0d21fdfd107)
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Task-2:
 * Refer to C-program based lab and RISCV based lab.<br/>
