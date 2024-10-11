@@ -45,19 +45,7 @@ $ riscv64-unknown-elf-objdump -d filename.o | less <br/>
 
 ![3](https://github.com/user-attachments/assets/a593e42f-53ea-42d3-8eb6-f0d21fdfd107)
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Task-2:
+# Task-2: Compiled C code , RISCV objdmp. Write a C Program for any simple application  and compile with RISC-V  GCC/SPIKE <br/>
 * Refer to C-program based lab and RISCV based lab.<br/>
 * Execute both the tasks in the terminal window.<br/>
 *Compilers use are GCC and Risc GCC compiler.<br/>
@@ -86,7 +74,7 @@ $ riscv64-unknown-elf-objdump -d filename.o | less <br/>
 
 
 
-# TASK-3:
+# TASK-3: List various RISCV  Instruction Type  R,I,S,B,U,J with the  32 bit encoded form<br/>
 
 * Refer to the RISC-V software documentation and list various RISC-V Instruction code<br/>
 * 32 bit instruction format for 15 unique instruction codes from objdump file<br/>
@@ -359,7 +347,7 @@ Machine code for  mv a2,a1 <br/>
 
 
 
-# Task-4:
+# Task-4:By making use of RISCV Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms
 
 # Use the Risc_V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your Github<br/>
 
@@ -440,6 +428,8 @@ View Waveform:<br/>
 ->EX_MEM_IR[31:0]=32'h00520600<br/>
 -> ADDI means 'Add Immediate'<br/>
 -> Operation 4+5=9<br/>
+
+# 
 
 
 
