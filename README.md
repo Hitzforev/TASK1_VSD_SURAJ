@@ -1,3 +1,17 @@
+# VSD_SQUADRON_MINI _RISCV_RESEARCH_INTERNSHIP<br/>
+![1](https://github.com/user-attachments/assets/91fd5849-7bf7-4cdd-b69f-6771d83e0d71)
+# TASK 1: Installing the required programmmes dor the Internship such as Ubuntu on VBBOX,Visualc++ andwriting an example of C code along with evaluating RISC assembly code for the sample C code <br/>
+
+# Step 1: Setting up Ubuntu within VMBox<br/>
+
+- Install Ubuntu on VMBox<br/>
+- Launch Ubuntu,s terminal<br/>
+
+# Step 2: Install Leafpad<br/>
+$ sudo apt install leafpad
+Navigate to home directory:
+$ cd
+$ leafpad filename.c
 
 
 Instructor : Kunal Ghosh 
