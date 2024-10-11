@@ -1,6 +1,6 @@
-VSD_SQUADRON_MINI _RISCV_RESEARCH_INTERNSHIP<br/>
+# VSD_SQUADRON_MINI _RISCV_RESEARCH_INTERNSHIP<br/>
 ![1](https://github.com/user-attachments/assets/91fd5849-7bf7-4cdd-b69f-6771d83e0d71)
-Instructor : Kunal Ghosh <br/>
+# Instructor : Kunal Ghosh <br/>
 
 # TASK 1: Installing the required programmmes dor the Internship such as Ubuntu on VBBOX,Visualc++ andwriting an example of C code along with evaluating RISC assembly code for the sample C code <br/>
 
@@ -429,8 +429,77 @@ View Waveform:<br/>
 -> ADDI means 'Add Immediate'<br/>
 -> Operation 4+5=9<br/>
 
-# 
+# TASK-6 Final Task of this internship is to implement any digital circuits using VSDSquadron Mini and check whether the building and uploading of C program file on RISCV processor works<br>
 
+# Implementing Full Adder using VSDSquadron Mini <br/>
+
+# VSD Squadron Mini <br/>
+
+![6](https://github.com/user-attachments/assets/15053d22-e783-45d5-b65c-0246bee8f971)
+
+-Introducing the VSDSquadron Mini, a versatile powerhouse within the RISC-V landscape that elevates your development to new heights. Whether you’re a newcomer delving into the realm of embedded systems or an experienced developer crafting intricate devices, the VSDSquadron Mini is your ideal companion. It seamlessly bridges the gap between theory and practical application, offering an onboard flash programmer with a single-wire programming protocol to jumpstart your projects in education and development with proficiency and ease.
+
+# Pin Out Diagram:
+
+![5](https://github.com/user-attachments/assets/7597dd9b-7579-4e1b-910b-8d81717e7cf5)
+
+# Overview:
+Project Overview: Implementing a Full Adder Combinational Circuit using VSDSquadron Mini <br/>
+
+- This project involves designing and implementing a Full Adder combinational circuit using the VSDSquadron Mini, a RISC-V based System-on-Chip (SoC) development kit. The Full Adder circuit is a fundamental component in digital electronics, widely used in the design of n-bit Adder circuits.<br/>
+
+# What is a Full Adder Circuit?
+
+- A Full Adder circuit is a digital circuit that adds two binary digits and a carry-in digit to produce a sum and carry-out digit. It is a crucial component in most digital circuits that perform arithmetic operations such as addition and subtraction.<br/>
+
+# Project Objectives
+
+The objectives of this project are:<br/>
+
+- To demonstrate the practical application of digital logic and RISC-V architecture in executing arithmetic operations.<br/>
+- To reflect the process of reading and writing binary data through GPIO pins.<br/>
+- To implement the operation of a Full Adder through digital logic gates.<br/>
+- To simulate the circuit using PlatformIO IDE and display the outputs using LEDs.<br/>
+- Key Components and Technologies<br/>
+# Components Required:
+* VSDSquadron Mini
+* Push Buttons for Input of binary data
+* 2 LEDs for displaying the Output
+* Breadboard
+* Jumper Wires
+* VS Code for Software Development
+* PlatformIO multi framework professional IDE
+  
+# VSDSquadron Mini: A RISC-V based SoC development kit..<br/>
+
+* Full Adder Circuit: A digital circuit that adds two binary digits and a carry-in digit to produce a sum and carry-out digit.<br/>
+* Digital Logic Gates: Used to implement the Full Adder circuit.<br/>
+* PlatformIO IDE: Used to simulate the circuit.<br/>
+* GPIO Pins: Used to read and write binary data.<br/>
+* LEDs: Used to display the outputs of the circuit.<br/>
+
+# Hardware Connection:<br/>
+![7](https://github.com/user-attachments/assets/63e5d0dd-2099-4d75-8049-2ae507dc9a1a)
+
+# Platformio in Visual Studio and checking the code with build and run command  <br/>
+![9](https://github.com/user-attachments/assets/f03b83d5-24bc-4ac5-b68a-07b2e7ee42e3)
+![10](https://github.com/user-attachments/assets/7fa0dfc2-acda-48e8-b84c-bbdbc222ad3b)
+![11](https://github.com/user-attachments/assets/b0d3391c-dd10-4d9f-894f-46e1540d2443)
+
+
+
+![8](https://github.com/user-attachments/assets/241a2cc0-78df-400a-b10d-5c3dcdb8f113)
+
+# Application Video :
+ 
+# Acknowledgement:.<br/>
+
+This work is a modification of the projects available at https://github.com/Hitzforev/TASK1_VSD_SURAJ/edit/main/README.md . The VSD team expresses sincere gratitude to the open-source community for their valuable contributions.
+
+We are enthusiastic about contributing to and advancing the development of open-source tools and fostering a collaborative community. Your support and involvement are essential to the success of this project.
+
+Thank you for being part of our journey!
+- VSD Team
 
 
 
