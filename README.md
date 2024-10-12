@@ -12,36 +12,36 @@
 # Step 2: Install Leafpad<br/>
 
 
- $ sudo apt install leafpad <br/>
+    $    sudo apt install leafpad <br/>
 
 
 Navigate to home directory:<br/>
 
- $ cd <br/>
+    $    cd <br/>
 
 
- $ leafpad filename.c <br/>
+    $   leafpad filename.c <br/>
 
 ![Pic1](https://github.com/user-attachments/assets/e657f68b-0338-4749-b669-703b952e6719)
 
 # Step 3: Compile and Run the C Code<br/>
 
-$ gcc filename .c
+    $    gcc filename .c
 
 Run the Compiled Program :
 
-$./a.out
+    $    ./a.out
 
 ![pic4](https://github.com/user-attachments/assets/778e8b9e-687b-4f7a-b463-73a134f8421d)
 
 # Step 4: Compile C Code with RISC-V Compiler<br/>
 Compile the C code using the RISC-V compiler:
 
-$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o filename.o filename.c<br/>
+    $    riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o filename.o filename.c<br/>
 
-$ ls -ltr filename.o<br/>
+    $    ls -ltr filename.o<br/>
 
-$ riscv64-unknown-elf-objdump -d filename.o | less <br/>
+    $    riscv64-unknown-elf-objdump -d filename.o | less <br/>
 
 ![3](https://github.com/user-attachments/assets/a593e42f-53ea-42d3-8eb6-f0d21fdfd107)
 
@@ -347,9 +347,7 @@ Machine code for  mv a2,a1 <br/>
 
 
 
-# Task-4:By making use of RISCV Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms
-
-# Use the Risc_V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your Github<br/>
+# Task-4:By making use of RISCV Core: Use the Risc_V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your Github<br/>
 
 
 1.Clone the Reference Repository First,clone the repository that contains the Verilog netlist and testbench:<br/>
@@ -461,6 +459,7 @@ The objectives of this project are:<br/>
 - To implement the operation of a Full Adder through digital logic gates.<br/>
 - To simulate the circuit using PlatformIO IDE and display the outputs using LEDs.<br/>
 - Key Components and Technologies<br/>
+
 # Components Required:
 * VSDSquadron Mini
 * Push Buttons for Input of binary data
@@ -486,36 +485,44 @@ The objectives of this project are:<br/>
 ![10](https://github.com/user-attachments/assets/7fa0dfc2-acda-48e8-b84c-bbdbc222ad3b)
 ![11](https://github.com/user-attachments/assets/b0d3391c-dd10-4d9f-894f-46e1540d2443)
 
+# Operation:
+The full adder is a digital circuit that adds three input bits (A, B, and Carry-in) and produces two output bits: Sum and Carry-out.<br/>
+It is a fundamental building block in digital circuits, used for performing arithmetic operations like addition, subtraction, and multiplication.<br/>
+Input: The full adder takes three input bits: A, B, and Carry-in.<br/>
+Half Adders: The circuit internally uses two half adders.<br/>
+The first half adder adds A and B, producing a Sum1 and Carry1.<br/>
+The second half adder adds Carry1 and Carry-in, producing a Sum2 and Carry-out.<br/>
+Sum Calculation: The final Sum output is obtained by XOR-ing Sum1 and Sum2.<br/>
+Carry-out Calculation: The Carry-out output is obtained by OR-ing Carry1 and Sum2.<br/>
+
+# Truth Table:
+
+![12](https://github.com/user-attachments/assets/7dbbe200-3f2a-4448-ba3f-b6b8b060582b)
+
+# Circuit Diagram :
+
+![13](https://github.com/user-attachments/assets/b0eb43d9-e14e-4378-875e-3d884229c6e8)
+
+
+Applications:
+
+Arithmetic operations: Addition, subtraction, multiplication<br/>
+Digital counters: Incrementing and decrementing<br/>
+Logic circuits: Implementing various logic functions<br/>
+The full adder is a fundamental component in digital circuits, providing the basic functionality for performing arithmetic and logical operations.<br/>
+
+
 # Application Video :
 
+https://drive.google.com/file/d/1y0VqZpqdJ-uz9C-OLv3g05noC4XjECeR/view?usp=drive_link
 
 
- 
-# Acknowledgement:.<br/>
+ # Acknowledgement:<br/>
 
-This work is a modification of the projects available at https://github.com/Hitzforev/TASK1_VSD_SURAJ/edit/main/README.md . The VSD team expresses sincere gratitude to the open-source community for their valuable contributions.
-
-We are enthusiastic about contributing to and advancing the development of open-source tools and fostering a collaborative community. Your support and involvement are essential to the success of this project.
-
-Thank you for being part of our journey!
-- VSD Team
-
-
-
-
-
-
-
-
-
-
-
-
-
--
-
-
-
+ I would like to thank Kunal Ghosh Sir for this amazing internship experience on RISCV Architecture using VSDSquadron Mini. I was really passionate about diving into the world of RISCV, and here i got the kickstart. 
+ I had an amazing experience throughout this internship program. Thanks a lot VLSI System Design for launching such a phoenomenal research internship This work is a modification of the projects available at https://github.com/Hitzforev/TASK1_VSD_SURAJ/edit/main/README.md 
+ The VSD team expresses sincere gratitude to the open-source community for their valuable contributions.
+ Your support and involvement are essential to the success of this project.
 
 
  
