@@ -493,8 +493,8 @@ Input: The full adder takes three input bits: A, B, and Carry-in.<br/>
 Half Adders: The circuit internally uses two half adders.<br/>
 The first half adder adds A and B, producing a Sum1 and Carry1.<br/>
 The second half adder adds Carry1 and Carry-in, producing a Sum2 and Carry-out.<br/>
-Sum Calculation: The final Sum output is obtained by XOR-ing Sum1 and Sum2.<br/>
-Carry-out Calculation: The Carry-out output is obtained by OR-ing Carry1 and Sum2.<br/>
+Sum Calculation: The final Sum output is obtained by XOR-ing Sum1 and Sum2. Sum =A^B^C<br/>
+Carry-out Calculation: The Carry-out output is obtained by OR-ing Carry1 and Sum2.Carry=AB+Cin(A xor B)<br/>
 
 # Truth Table:
 
