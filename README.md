@@ -51,24 +51,25 @@ Compile the C code using the RISC-V compiler:
 *Compilers use are GCC and Risc GCC compiler.<br/>
 ### Using C programming:
 ->Make sure you are in the home directory<br/>
-![Pic1](https://github.com/user-attachments/assets/ed71ea3e-afe2-4b6f-8fad-13e9cd09cd83)
+![Pic1](https://github.com/user-attachments/assets/0f74a555-f624-438d-a38b-a9540d73b872)
+
 
 
 ->We can see the assembly main code from which location it starts<br/>
-![pic2](https://github.com/user-attachments/assets/e8c58ddf-53fc-4353-bcf2-7e533ad17dc9)
-
-
+![pic2](https://github.com/user-attachments/assets/ab4f45a3-83fa-4e22-8a09-e22d173ac672)
 
 ->Enter the command gcc sum1ton.c<br/>
 ->To check the output run command ./a.out<br/>
-![pic3](https://github.com/user-attachments/assets/98dff644-967c-4a60-a33e-fb2bd420876b)
+![pic3](https://github.com/user-attachments/assets/e71255fb-fe93-41ae-95cb-9f9b37d76c4b)
+
 
 <br/>
 
 ->Using Debugger d in spike to debug some locations of assembly code<br/>
 ->Actually here we see the initial value stack is having same value after lui instrunction<br/>
 ->C-Progrram compile using RISC-V gcc and run using spike<br/>
-![pic4](https://github.com/user-attachments/assets/be684de7-ebe4-43ea-a91f-eb1e1a466327)
+![pic4](https://github.com/user-attachments/assets/336e9ab7-2449-435e-9a02-935ffbcadcbb)
+
 
 ->Finally we can use the same debugger to check all other locations 
 
