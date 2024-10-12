@@ -504,7 +504,7 @@ Carry-out Calculation: The Carry-out output is obtained by OR-ing Carry1 and Sum
 ![13](https://github.com/user-attachments/assets/b0eb43d9-e14e-4378-875e-3d884229c6e8)
 
 
-Applications:
+# Applications:
 
 Arithmetic operations: Addition, subtraction, multiplication<br/>
 Digital counters: Incrementing and decrementing<br/>
