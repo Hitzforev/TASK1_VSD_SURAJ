@@ -370,8 +370,8 @@ Machine code for  mv a2,a1 <br/>
 - Here the testbench should include the above code<br/>
 
 
-  $ dumpfile("simulation.vcd"); // Name of the VCD file<br/>
-  $ dumpvars(0, testbench); // Dump all signals of the testbench module<br/>
+    $  dumpfile("simulation.vcd"); // Name of the VCD file<br/>
+    $  dumpvars(0, testbench); // Dump all signals of the testbench module<br/>
 
 4.Run the Functional Simulation Signals and Instantiation of the design<br/>
 Complie and Simulate:<br/>
