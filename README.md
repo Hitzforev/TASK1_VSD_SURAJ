@@ -140,8 +140,8 @@ Machine code for sd s0,16(sp)<br/>
 - rs1(ss=x2):00010<br/>
 - funct3: 011<br/>
 - imm[4:0](5 bits):10000
-- opcode:0010011<br/>
-32 bit encoding-0000000 01000 00010 011 0010011 <br/>
+- opcode:0100011<br/>
+32 bit encoding-0000000 01000 00010 011 0100011 <br/>
 
 
 Machine code for  mv a1,a5 <br/>
