@@ -388,7 +388,7 @@ Complie and Simulate:<br/>
 
 View Waveform:<br/>
 
-    $ gtkwave simulation.vcd    
+    $ gtkwave iiitb_rv32i.vcd    
 
 
 ![pic27](https://github.com/user-attachments/assets/21f53af2-6b9c-4fc6-9a37-ca625d5adf5c)
