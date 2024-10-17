@@ -208,7 +208,7 @@ Machine code for  sw a5,16(s0) <br/>
 - funct3: 010<br/>
 - imm[4;0]:10000
 - opcode:0100011<br/>
-32 bit encoding-0000000 01000 01111 010 10000 0100011<br/>
+32 bit encoding-0000000 01111 01000 010 10000 0100011<br/>
 
 
 Machine code for  ld a5,64(s0) <br/>
